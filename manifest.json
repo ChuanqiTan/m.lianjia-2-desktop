@@ -1,0 +1,17 @@
+{
+    "name": "m.lianjia jumper",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "m.lianjia.com Jump to Desktop Page",
+    "icons": { "128": "icon.png"  },
+    "permissions": [
+        "tabs",
+        "https://m.lianjia.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://m.lianjia.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
